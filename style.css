@@ -1,181 +1,109 @@
+@import url("components/setup.css");
+@import url("components/header.css");
+@import url("components/main.css");
+@import url("components/specific.css");
+
 @font-face {
-  font-family: "양진체";
-  src: url("https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff")
+  font-family: "Cafe24SsurroundAir";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
     format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-*,
-html,
-body {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@font-face {
+  font-family: "ELAND_Nice_M";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Nice_M.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
   width: 100vw;
-  font-family: "양진체";
-  perspective: 1500px;
+  font-family: "Cafe24SsurroundAir", "ELAND_Nice_M", sans-serif;
+  overflow-y: hidden;
 }
 
-.basic {
-  padding-top: 7rem;
-  width: 80rem;
-  height: 42rem;
-  transition: all 0.2s ease-in-out;
-  flex-direction: column;
+.main-work {
+  width: 100vw;
+  height: 50rem;
+  padding: 3rem 6rem;
 }
 
-.inner {
-  width: 70rem;
-  height: 20rem;
-  margin-bottom: 1rem;
+.main-header {
+  display: flex;
+  width: 100%;
+  height: 16rem;
 }
 
-.pop {
-  animation: pop 1s ease-in-out forwards;
-}
-
-.two {
-  animation-delay: 0.2s;
-}
-.three {
-  animation-delay: 0.4s;
-}
-.four {
-  animation-delay: 0.5s;
-}
-.five {
-  animation-delay: 0.6s;
-}
-.six {
-  animation-delay: 0.7s;
-}
-
-.box {
-  opacity: 0;
-  margin: 0.5rem;
-  width: 23rem;
-  height: 20rem;
-  flex-shrink: 2;
-  background-color: lightseagreen;
+.main-header__box {
+  padding-left: 2.6rem;
+  width: 33.333%;
+  height: 100%;
+  flex-shrink: 1;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background: linear-gradient(
+    180deg,
+    rgb(241, 255, 229) 60% 60%,
+    rgb(255, 248, 236) 40% 40%
+  );
   border-radius: 10px;
-  transition: all 0.15s ease-in-out;
-  flex-direction: column;
-  will-change: contents;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.082), 0px 0px 5px rgba(0, 0, 0, 0.055);
 }
 
-.box:hover {
-  background-color: rgb(0, 255, 255);
-  width: 24rem;
-  height: 20.5rem;
-  transition: all 0.15s ease-in-out;
+.main-header__box:hover {
+  transition: all 0.2s ease;
+  width: 37%;
 }
 
-.box:hover .yumi {
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
+.main-header__box:nth-child(1) {
+  margin-right: 1rem;
 }
 
-.box:hover .yumi-title {
-  transform: scale(1.02);
-  transition: all 0.3s ease-in-out;
+.main-header__box:nth-child(2) {
+  margin-right: 1rem;
 }
 
-.box:hover .yumi-tag {
-  transform: scale(1.01);
-  transition: all 0.3s ease-in-out;
-}
-
-.top {
-  background-color: paleturquoise;
+.main-header__top {
   width: 100%;
   height: 60%;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.main-header__bottom {
+  padding-top: 1rem;
+  width: 100%;
+  height: 40%;
+  transition: all 0.4s ease;
 }
 
 .yumi-title {
-  margin-left: 2rem;
-  font-size: 2.5rem;
-  position: relative;
-  z-index: 2;
-  transition: all 0.3s ease-in-out;
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin-right: 2rem;
 }
 
-.yumi {
-  transition: all 0.3s ease-in-out;
+.main-header__box:hover .main-header__top {
+  transform: scale(1.02);
+  transition: all 0.4s ease;
 }
 
-.bottom {
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  width: 100%;
-  height: 40%;
-  display: flex;
-  background-color: papayawhip;
+.main-header__box:hover .main-header__bottom {
+  transform: scale(1.02);
+  transition: all 0.4s ease;
 }
 
 .yumi-tag {
-  margin-top: 1rem;
   font-size: 1rem;
-  color: rgb(100, 100, 100);
-  margin-left: 2rem;
-  transition: all 0.3s ease-in-out;
+  color: grey;
 }
 
-@media screen and (max-width: 80rem) {
-  .basic {
-    padding-top: 1rem;
-    width: 100vw;
-    height: fit-content;
-  }
-  .inner {
-    width: 100vw;
-    height: 60rem;
-    margin-bottom: 0;
-    flex-direction: column;
-  }
-  .box {
-    width: 21rem;
-    height: 19rem;
-  }
-
-  .box:hover {
-    background-color: rgb(0, 255, 255);
-    width: 21.5rem;
-    height: 19.5rem;
-    transition: all 0.15s ease-in-out;
-  }
-
-  .yumi-title {
-    font-size: 2rem;
-  }
-}
-
-@keyframes pop {
-  from {
-    transform: translateY(90px);
-    opacity: 0;
-  }
-  to {
-    transform: none;
-    opacity: 1;
-  }
+.yumi-image {
+  width: 12rem;
+  height: 12rem;
+  object-fit: contain;
 }
