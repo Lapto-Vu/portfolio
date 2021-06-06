@@ -1,0 +1,81 @@
+*,
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 100vw;
+}
+
+nav {
+  padding-top: 5rem;
+  width: 80rem;
+  height: 45rem;
+  background-color: antiquewhite;
+  display: grid;
+  grid-gap: 0.3rem;
+  transition: all 2s ease-in-out;
+}
+
+.basic {
+  grid-template-areas:
+    "so so so so ko ko ko ko po po po po"
+    "so so so so ko ko ko ko po po po po"
+    "so so so so ko ko ko ko po po po po"
+    "so so so so ko ko ko ko po po po po"
+    "to to to to lo lo lo lo co co co co"
+    "to to to to lo lo lo lo co co co co"
+    "to to to to lo lo lo lo co co co co"
+    "to to to to lo lo lo lo co co co co";
+}
+
+.so-enter {
+  grid-template-areas:
+    "so so so so so ko ko ko po po po po"
+    "so so so so so ko ko ko po po po po"
+    "so so so so so ko ko ko po po po po"
+    "so so so so so ko ko ko po po po po"
+    "so so so so so lo lo lo co co co co"
+    "to to to to to lo lo lo co co co co"
+    "to to to to to lo lo lo co co co co"
+    "to to to to to lo lo lo co co co co";
+}
+
+.box {
+  background-color: cornflowerblue;
+  transition: all 2s ease-in-out;
+}
+
+.so {
+  grid-area: so;
+  grid-column: 1fr;
+}
+
+.ko {
+  grid-area: ko;
+  flex-grow
+}
+
+.po {
+  grid-area: po;
+}
+
+.to {
+  grid-area: to;
+}
+
+.lo {
+  grid-area: lo;
+}
+
+.co {
+  grid-area: co;
+}
