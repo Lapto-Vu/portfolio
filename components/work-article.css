@@ -32,6 +32,11 @@
   background-color: white;
 }
 
+.iframe {
+  width: 98%;
+  height: 30rem;
+}
+
 @media screen and (max-width: 1300px) {
   .main--arti {
     width: 100vw;

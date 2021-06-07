@@ -66,12 +66,13 @@
 /* 이미지 삽입 */
 
 .yumi-01-image {
-  width: 33rem;
-  height: 17rem;
+  width: 31rem;
+  height: 16rem;
+  object-fit: cover;
   position: absolute;
   z-index: 1;
   opacity: 0.3;
-  top: -10px;
+  top: -3px;
 }
 
 /* 미디어 쿼리 */
@@ -110,7 +111,8 @@
     height: 35%;
   }
   .yumi-01-image {
+    top: -70px;
     width: inherit;
-    height: 19rem;
+    height: 40rem;
   }
 }
