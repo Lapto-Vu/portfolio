@@ -5,14 +5,26 @@ const pageOne = document.querySelector(".js-page-one")
 const pageTwo = document.querySelector(".js-page-two")
 
 
+function pageDown(e) {
+    e.style.zIndex="-1";
+    e.style.position="absolute";
+    e.style.opacity="0";
+}
+
+function pageUp(e) {
+    e.style.zIndex="1";
+    e.style.position="relative";
+    e.style.opacity="1";
+}
+
 function handlePageTwo () {
-    pageOne.style.zIndex = "-1";
-    pageTwo.style.zIndex = "1"; 
+    pageUp(pageTwo);
+    pageDown(pageOne);
 }
 
 function handlePageOne () {
-    pageOne.style.zIndex = "1";
-    pageTwo.style.zIndex = "-1"; 
+    pageUp(pageOne);
+    pageDown(pageTwo);
 }
 
 
