@@ -34,6 +34,8 @@
   height: 7rem;
   width: 9rem;
   background-color: black;
+  font-family: "Abril Fatface";
+  border-radius: 10px;
 }
 
 .header__inner > div:focus-within {

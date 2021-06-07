@@ -1,0 +1,25 @@
+.main--arti {
+  width: 100vw;
+  height: 120rem;
+  padding: 0rem 6rem;
+}
+
+.main__inner--arti {
+  padding: 1.4rem;
+  border: 2px solid black;
+  width: 100%;
+  height: 118rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.main__intro--arti {
+  font-family: "Spoqa Han Sans Neo";
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  text-underline-position: under;
+}
