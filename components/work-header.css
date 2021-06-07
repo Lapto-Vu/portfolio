@@ -1,0 +1,116 @@
+.main-work {
+  width: 100vw;
+  height: 22rem;
+  padding: 4rem 6rem 0rem 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.main-header {
+  display: flex;
+  width: 90rem;
+  height: 16rem;
+  border: 2px solid black;
+}
+
+.main-header__box {
+  position: relative;
+  width: 33.333%;
+  height: 100%;
+  flex-shrink: 1;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  position: relative;
+  overflow: hidden;
+  font-family: "ELAND_Nice_M";
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+}
+
+.title {
+  width: 21rem;
+  font-size: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.sub-title {
+  width: 21rem;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-family: "Cafe24SsurroundAir";
+  color: grey;
+  position: relative;
+  z-index: 2;
+}
+
+.main-header__box:hover {
+  transition: all 0.2s ease;
+  width: 35%;
+}
+
+.main-header__box:nth-child(1) {
+  border-right: 2px solid black;
+}
+
+.main-header__box:nth-child(2) {
+  border-right: 2px solid black;
+}
+
+/* 이미지 삽입 */
+
+.yumi-01-image {
+  width: 33rem;
+  height: 17rem;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.3;
+  top: -10px;
+}
+
+/* 미디어 쿼리 */
+
+@media screen and (max-width: 1300px) {
+  .main-work {
+    width: 100vw;
+    height: 53rem;
+    padding: 3rem 3rem;
+  }
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50rem;
+    align-items: center;
+  }
+  .main-header__box {
+    width: 100.3%;
+    height: 33.333%;
+  }
+
+  .main-header__box:nth-child(1) {
+    border-right: none;
+    border-bottom: 2px solid black;
+  }
+
+  .main-header__box:nth-child(2) {
+    border-right: none;
+    border-bottom: 2px solid black;
+  }
+
+  .main-header__box:hover {
+    transition: all 0.2s ease;
+    width: 100.3%;
+    height: 35%;
+  }
+  .yumi-01-image {
+    width: inherit;
+    height: 19rem;
+  }
+}

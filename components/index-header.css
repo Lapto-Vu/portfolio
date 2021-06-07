@@ -3,7 +3,7 @@
   height: 10rem;
   display: flex;
   padding-left: 6rem;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .header__inner {
@@ -11,15 +11,18 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  width: 96rem;
   height: 100%;
 }
 
 .header__inner > div {
   margin-right: 3rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   height: 2rem;
   transition: 0.02s ease;
+  font-family: "ELAND_Nice_M";
+  font-weight: 100;
+  letter-spacing: 0.1rem;
 }
 
 .header__inner > a {
@@ -38,30 +41,21 @@
   border-radius: 10px;
 }
 
-.header__inner > div:focus-within {
-  font-weight: 600;
-  border-bottom: 3px solid black;
-}
-
-.header__inner > div:focus {
-  font-weight: 600;
-  border-bottom: 3px solid black;
-}
-
 .header__inner > div:hover {
-  font-weight: 600;
+  transform: scale(1.01);
   transition: 0.04s ease;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
-@media screen and (max-width: 1200px) {
-  .header__inner > div {
-    font-size: 1rem;
-  }
+.underline {
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1300px) {
   .header {
-    height: 20rem;
+    height: 24rem;
     padding-left: 4rem;
   }
 

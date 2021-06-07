@@ -1,13 +1,15 @@
 .main {
   width: 100vw;
   height: 39rem;
-  padding: 3rem 6rem;
+  padding: 4rem 6rem;
+  display: flex;
+  justify-content: center;
 }
 
 .main__inner {
   padding: 1.4rem;
   border: 2px solid black;
-  width: 100%;
+  width: 90rem;
   height: 30rem;
   display: flex;
   flex-direction: column;
@@ -26,11 +28,19 @@
 .bold {
   font-family: "ELAND_Nice_M";
   letter-spacing: 0.1rem;
-  font-weight: bold;
-  font-size: 2rem;
+  padding-bottom: 0.2rem;
+  font-size: 2.5rem;
 }
 
-@media screen and (max-width: 900px) {
+.bold2 {
+  font-family: "ELAND_Nice_M";
+  letter-spacing: 0.1rem;
+  padding-bottom: 0.2rem;
+  font-weight: ;
+  font-size: 1.7rem;
+}
+
+@media screen and (max-width: 1300px) {
   .main {
     width: 100vw;
     height: 48rem;

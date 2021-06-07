@@ -1,9 +1,9 @@
 @import url("components/setup.css");
-@import url("components/header.css");
-@import url("components/main.css");
-@import url("components/main-header.css");
-@import url("components/main-article.css");
-@import url("components/specific.css");
+@import url("components//js-page.css");
+@import url("components/index-header.css");
+@import url("components/index-intro.css");
+@import url("components/work-header.css");
+@import url("components/work-article.css");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @import url("//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css");
 @font-face {

@@ -2,12 +2,15 @@
   width: 100vw;
   height: 120rem;
   padding: 0rem 6rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .main__inner--arti {
   padding: 1.4rem;
   border: 2px solid black;
-  width: 100%;
+  width: 90rem;
   height: 118rem;
   display: flex;
   flex-direction: column;
@@ -19,7 +22,23 @@
   font-family: "Spoqa Han Sans Neo";
   padding-top: 1rem;
   padding-left: 1rem;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  font-size: 1rem;
+  line-height: 2rem;
   text-underline-position: under;
+}
+
+@media screen and (max-width: 1300px) {
+  .main--arti {
+    width: 100vw;
+    height: fit-content;
+    padding: 2rem 3rem;
+  }
+
+  .main__inner--arti {
+    height: fit-content;
+  }
+
+  .main__intro--arti {
+    font-size: 1rem;
+  }
 }

@@ -1,0 +1,11 @@
+.js-page-one {
+  position: absolute;
+  background-color: red;
+  z-index: 1;
+}
+
+.js-page-two {
+  position: absolute;
+  background-color: blue;
+  z-index: -1;
+}
