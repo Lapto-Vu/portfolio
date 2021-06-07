@@ -73,12 +73,17 @@
   }
 
   .yumi-01-image--ani {
-    width: 80rem;
-    height: 42rem;
+    width: 90rem;
+    height: 50rem;
+  }
+
+  .yumi-01-image--sc {
+    width: 90rem;
+    height: 50rem;
   }
 
   .iframe--ani {
-    width: 30rem;
+    width: 100%;
     height: 30rem;
   }
 }

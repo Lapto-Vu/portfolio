@@ -41,10 +41,11 @@
   .main--arti {
     width: 100vw;
     height: fit-content;
-    padding: 2rem 3rem;
+    padding: 2rem 1rem;
   }
 
   .main__inner--arti {
+    width: 100%;
     height: fit-content;
   }
 
