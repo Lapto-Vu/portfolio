@@ -38,6 +38,16 @@
   object-fit: contain;
 }
 
+.yumi-01-image--sc {
+  width: 80rem;
+  height: 40rem;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.4;
+  top: -50px;
+  object-fit: contain;
+}
+
 .iframe--ani {
   width: 50rem;
   height: 30rem;
