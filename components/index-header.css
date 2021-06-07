@@ -31,12 +31,10 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  font-weight: 600;
   font-size: 2rem;
-  color: white;
+  color: black;
   height: 7rem;
   width: 9rem;
-  background-color: black;
   font-family: "Abril Fatface";
   border-radius: 10px;
 }

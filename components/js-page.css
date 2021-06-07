@@ -5,6 +5,14 @@
 }
 
 .js-page-two {
+  background-color: bisque;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.js-page-three {
+  background-color: pink;
   position: absolute;
   z-index: -1;
   opacity: 0;
