@@ -32,8 +32,13 @@
   background-color: white;
 }
 
+.yumi-episode--la {
+  width: 85%;
+  background-color: white;
+}
+
 .yumi-episode--bt {
-  width: 60%;
+  width: 70%;
   background-color: white;
 }
 

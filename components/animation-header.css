@@ -50,11 +50,11 @@
 
 .yumi-01-image--novel {
   width: inherit;
-  height: 120rem;
+  height: 70rem;
   position: absolute;
   z-index: 1;
   opacity: 0.4;
-  top: -50px;
+  top: -500px;
   object-fit: contain;
 }
 
