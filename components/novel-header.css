@@ -18,7 +18,7 @@
 }
 
 .title--novel {
-  width: 21rem;
+  width: 15rem;
   font-size: 3rem;
   display: flex;
   justify-self: center;
@@ -27,7 +27,7 @@
 }
 
 .sub-title--novel {
-  width: 21rem;
+  width: 16rem;
   margin-top: 1rem;
   line-height: 1.5rem;
   font-size: 1rem;
