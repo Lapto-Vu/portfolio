@@ -27,3 +27,7 @@ body {
   font-family: "Cafe24SsurroundAir", "ELAND_Nice_M", "Spoqa Han Sans",
     "Spoqa Han Sans JP", "Spoqa Han Sans Neo", "sans-serif";
 }
+
+.one {
+  background-image: url("img/yumi-01");
+}
