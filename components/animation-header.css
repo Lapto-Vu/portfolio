@@ -48,6 +48,26 @@
   object-fit: contain;
 }
 
+.yumi-01-image--novel {
+  width: inherit;
+  height: 120rem;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.4;
+  top: -50px;
+  object-fit: contain;
+}
+
+.yumi-01-image--art {
+  width: inherit;
+  height: 60rem;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.2;
+  bottom: -350px;
+  object-fit: contain;
+}
+
 .iframe--ani {
   width: 50rem;
   height: 30rem;

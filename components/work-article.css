@@ -28,8 +28,34 @@
 }
 
 .yumi-episode {
-  width: 90%;
+  width: 98%;
   background-color: white;
+}
+
+.yumi-episode--sc {
+  width: 60%;
+  background-color: white;
+}
+
+.yumi-episode--mx {
+  width: 40%;
+  background-color: white;
+  position: absolute;
+  z-index: -1;
+  top: 500px;
+  right: 50px;
+}
+
+.img-section {
+  width: 98%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.yumi-episode--to {
+  width: 19.7%;
+  margin: 2px;
 }
 
 .iframe {
