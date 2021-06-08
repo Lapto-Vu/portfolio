@@ -106,4 +106,16 @@
     width: 100%;
     height: 30rem;
   }
+
+  .yumi-01-image--novel {
+    width: 120rem;
+    height: 70rem;
+    top: -400px;
+  }
+
+  .yumi-01-image--art {
+    width: 120rem;
+    height: 80rem;
+    bottom: -300px;
+  }
 }

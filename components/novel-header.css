@@ -38,4 +38,12 @@
 }
 
 @media screen and (max-width: 1300px) {
+  .title--novel {
+    width: 15rem;
+    font-size: 2rem;
+  }
+
+  .sub-title--novel {
+    width: 16rem;
+  }
 }

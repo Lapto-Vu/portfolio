@@ -24,6 +24,7 @@
 }
 body {
   width: 100vw;
+  overflow-x: hidden;
   font-family: "Cafe24SsurroundAir", "ELAND_Nice_M", "Spoqa Han Sans",
     "Spoqa Han Sans JP", "Spoqa Han Sans Neo", "sans-serif";
 }
